@@ -3,7 +3,9 @@ Simple GEMM test to calculate TFLOPs
 
 ## Clone the test script from Github repository
 
-> git clone https://github.com/derekngo-smc/gemm_tflop .
+```
+git clone https://github.com/derekngo-smc/gemm_tflop .
+```
 
 ## Build docker image
 
