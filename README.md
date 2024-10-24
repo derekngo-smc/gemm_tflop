@@ -8,4 +8,4 @@ git clone https://github.com/derekngo-smc/gemm_tflop .
 docker build -t gemm_tflop .
 
 # Run docker image to calculate TFLOPs
-docker run -it --gpus all --net host --cap-add SYS_ADMIN gemm_tflop
+docker run -it --gpus '"device=0"' gemm_tflop
