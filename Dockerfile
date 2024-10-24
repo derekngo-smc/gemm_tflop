@@ -14,7 +14,7 @@ RUN pip3 install numpy torch
 WORKDIR /workdir
 
 # Copy the Python script to the working directory
-COPY gemm_tflop_1gpu.py .
+COPY gemm_tflop.py .
 
 # Execute the Python script
 CMD ["python3", "-m", "torch.distributed.run", "--standalone", "--nproc_per_node=8", "./gemm_tflop.py"]
