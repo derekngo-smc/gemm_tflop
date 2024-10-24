@@ -15,7 +15,7 @@ def run_gemm_bf16():
     torch.matmul(A, B)
     torch.cuda.synchronize()
 
-    num_runs = 60000
+    num_runs = 2000
     start_time = time.perf_counter()
     for _ in range(num_runs):
         C = torch.matmul(A, B)
