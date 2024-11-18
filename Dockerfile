@@ -17,4 +17,4 @@ WORKDIR /workdir
 COPY gemm_tflop.py .
 
 # Execute the Python script
-CMD ["python3", "-m", "torch.distributed.run", "--standalone", "./gemm_tflop.py"]
+#CMD ["python3", "-m", "torch.distributed.run", "--standalone", "./gemm_tflop.py"]
