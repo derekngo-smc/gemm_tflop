@@ -18,4 +18,13 @@ Run docker image to test any GPU device.  In this example, GPU0 is selected to r
 
 ```
 docker run -it --gpus '"device=0"' gemm_tflop
+   python3 -m torch.distributed.run --standalone gemm_tflop.py
+```
+
+## Run docker image to stress all GPU devices
+Run docker image to test any GPU device.  In this example, GPU0 is selected to run the test.
+
+```
+docker run -it --gpus '"device=0"' gemm_tflop
+   python3 -m torch.distributed.run --standalone gpu_stresstest.py
 ```
